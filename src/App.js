@@ -1,8 +1,11 @@
 import { useState } from "react";
 import "./App.css";
+import Addtable from "./Components/Addtable";
 import datas from "./data.json";
 function App() {
   const [contacts, setContacts] = useState(datas);
+
+
   return (
     <div className="appcontainer">
       <form>
@@ -27,6 +30,8 @@ function App() {
           </tbody>
         </table>
       </form>
+
+     <Addtable contacts={contacts} setContacts={setContacts}/>
     </div>
   );
 }
