@@ -25,6 +25,7 @@ export default function Addtable({contacts, setContacts}) {
         phoneNumber:addForm.phoneNumber,
         email:addForm.email
     }
+    console.log(values);
     const newValues=[...contacts, values];
     console.log(newValues)
     setContacts(newValues);
